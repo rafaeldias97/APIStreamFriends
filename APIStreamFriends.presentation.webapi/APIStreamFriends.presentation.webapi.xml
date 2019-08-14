@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APIStreamFriends.presentation.webapi</name>
+    </assembly>
+    <members>
+        <member name="T:APIStreamFriends.presentation.webapi.Swagger.SwaggerProducesAttribute">
+            <summary>
+            SwaggerResponseContentTypeAttribute
+            </summary>
+        </member>
+    </members>
+</doc>

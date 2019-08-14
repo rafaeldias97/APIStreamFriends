@@ -1,0 +1,23 @@
+version: '3'
+services:
+  sqlstreamfriends:
+    image: microsoft/mssql-server-linux:latest
+    container_name: sqlstreamfriends
+    restart: "always"
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=sa@12345
+
+  apistreamfriends:
+    image: apistreamfriends
+    container_name: apistreamfriends
+    build:
+      context: .
+    ports:
+      - "5005:80"
+    links:
+      - sqlstreamfriends
+    depends_on:
+      - sqlstreamfriends
