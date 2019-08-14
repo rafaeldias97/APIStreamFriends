@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace APIStreamFriends.domain.domain.Models
+namespace APIStreamFriends.presentation.webapi.Models
 {
-    public class Cliente
+    public class ClienteVM
     {
-        public int id { get; set; }
         public string email { get; set; }
         public string descricao { get; set; }
         public string imgPerfil { get; set; }

@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using APIStreamFriends.domain.domain.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace APIStreamFriends.infra.Data.MSSQL.Context
 {
     public class MSContext : DbContext
     {
-        //public DbSet<Transacao> Transacao { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
 
         public MSContext(DbContextOptions<MSContext> options) : base(options)
         {
@@ -14,10 +15,10 @@ namespace APIStreamFriends.infra.Data.MSSQL.Context
         {
             base.OnModelCreating(modelBuilder);
 
-            //modelBuilder.Entity<Transacao>(q =>
-            //{
-            //    q.ToTable("Transacao").HasKey(x => x.id);
-            //});
+            modelBuilder.Entity<Cliente>(q =>
+            {
+                q.ToTable("Cliente").HasKey(x => x.id);
+            });
         }
     }
 }

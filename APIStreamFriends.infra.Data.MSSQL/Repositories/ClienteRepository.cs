@@ -1,9 +1,6 @@
 ﻿using APIStreamFriends.domain.domain.Interfaces;
 using APIStreamFriends.domain.domain.Models;
 using APIStreamFriends.infra.Data.MSSQL.Context;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace APIStreamFriends.infra.Data.MSSQL.Repositories
 {
@@ -11,7 +8,7 @@ namespace APIStreamFriends.infra.Data.MSSQL.Repositories
         IClienteRepository
     {
         private MSContext ctx;
-        public ClienteRepository(MSContext ctx) : base(context)
+        public ClienteRepository(MSContext ctx) : base(ctx)
         {
             this.ctx = ctx;
         }
