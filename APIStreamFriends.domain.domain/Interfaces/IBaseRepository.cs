@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace APIStreamFriends.domain.domain.Interfaces
 {
-    public interface IGenericRepository<T> where T : class
+    public interface IBaseRepository<T> where T : class
     {
         //Async Methods
         Task<IEnumerable<T>> AllAsync();

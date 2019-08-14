@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace APIStreamFriends.infra.Data.MSSQL.Repositories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<T> : IBaseRepository<T> where T : class
     {
         private DbSet<T> entity_;
         protected MSContext context;
