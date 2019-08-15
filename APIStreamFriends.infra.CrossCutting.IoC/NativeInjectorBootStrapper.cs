@@ -18,8 +18,8 @@ namespace APIStreamFriends.infra.CrossCutting.IoC
             #region Validations
             //services.AddScoped<TransacaoCadastroValidations>();
             #endregion
-
-            services.AddDbContext<MSContext>(o => o.UseSqlServer("Server=streamfriends;Database=sqlapistreamfriends;User Id=sa;Password=sa@12345;"));
+            //sqlapistreamfriends
+            services.AddDbContext<MSContext>(o => o.UseSqlServer("Server=localhost;Database=dbstreamfriends;User Id=sa;Password=sa@12345;"));
         }
     }
 }

@@ -1,3 +1,5 @@
+using APIStreamFriends.domain.domain.Models;
+using APIStreamFriends.presentation.webapi.Models;
 using AutoMapper;
 
 namespace APIStreamFriends.presentation.webapi.Mappers
@@ -6,7 +8,7 @@ namespace APIStreamFriends.presentation.webapi.Mappers
     {
         public ViewModelToDomainMappingProfile()
         {
-            //CreateMap<TransacaoVM, Transacao>();
+            CreateMap<ClienteVM, Cliente>();
         }
     }
 }

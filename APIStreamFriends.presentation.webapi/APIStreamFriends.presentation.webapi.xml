@@ -4,6 +4,26 @@
         <name>APIStreamFriends.presentation.webapi</name>
     </assembly>
     <members>
+        <member name="M:APIStreamFriends.presentation.webapi.Controllers.ClienteController.Get">
+            <summary>
+            Recupera todos os clientes
+            </summary>
+        </member>
+        <member name="M:APIStreamFriends.presentation.webapi.Controllers.ClienteController.Post(APIStreamFriends.presentation.webapi.Models.ClienteVM)">
+            <summary>
+            Cadastrar um cliente
+            </summary>
+        </member>
+        <member name="M:APIStreamFriends.presentation.webapi.Controllers.ClienteController.Update(APIStreamFriends.domain.domain.Models.Cliente)">
+            <summary>
+            Altera um cliente
+            </summary>
+        </member>
+        <member name="M:APIStreamFriends.presentation.webapi.Controllers.ClienteController.Delete(APIStreamFriends.domain.domain.Models.Cliente)">
+            <summary>
+            Deleta um cliente
+            </summary>
+        </member>
         <member name="T:APIStreamFriends.presentation.webapi.Swagger.SwaggerProducesAttribute">
             <summary>
             SwaggerResponseContentTypeAttribute

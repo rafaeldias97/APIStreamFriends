@@ -4,7 +4,7 @@ using System;
 
 namespace APIStreamFriends.presentation.webapi.Swagger.Example
 {
-    public class TransacaoViewModelEx : IExamplesProvider
+    public class ClienteVMEx : IExamplesProvider
     {
         public object GetExamples()
         {
