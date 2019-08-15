@@ -24,6 +24,21 @@
             Deleta um cliente
             </summary>
         </member>
+        <member name="M:APIStreamFriends.presentation.webapi.Controllers.SeguidorController.GetById(System.Int32)">
+            <summary>
+            Recupera amigos
+            </summary>
+        </member>
+        <member name="M:APIStreamFriends.presentation.webapi.Controllers.SeguidorController.Post(APIStreamFriends.presentation.webapi.Models.SeguidorVM)">
+            <summary>
+            Seguir
+            </summary>
+        </member>
+        <member name="M:APIStreamFriends.presentation.webapi.Controllers.SeguidorController.Delete(APIStreamFriends.domain.domain.Models.Seguidor)">
+            <summary>
+            Deixar de seguir
+            </summary>
+        </member>
         <member name="T:APIStreamFriends.presentation.webapi.Swagger.SwaggerProducesAttribute">
             <summary>
             SwaggerResponseContentTypeAttribute

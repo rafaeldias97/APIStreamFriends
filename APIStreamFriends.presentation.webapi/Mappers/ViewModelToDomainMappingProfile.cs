@@ -9,6 +9,7 @@ namespace APIStreamFriends.presentation.webapi.Mappers
         public ViewModelToDomainMappingProfile()
         {
             CreateMap<ClienteVM, Cliente>();
+            CreateMap<SeguidorVM, Seguidor>();
         }
     }
 }

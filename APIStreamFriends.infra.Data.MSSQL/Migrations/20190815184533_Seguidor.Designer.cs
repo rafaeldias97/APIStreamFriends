@@ -4,14 +4,16 @@ using APIStreamFriends.infra.Data.MSSQL.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace APIStreamFriends.infra.Data.MSSQL.Migrations
 {
     [DbContext(typeof(MSContext))]
-    partial class MSContextModelSnapshot : ModelSnapshot
+    [Migration("20190815184533_Seguidor")]
+    partial class Seguidor
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -13,6 +13,7 @@ namespace APIStreamFriends.infra.CrossCutting.IoC
         {
             #region Repositories
             services.AddTransient<IClienteRepository, ClienteRepository>();
+            services.AddTransient<ISeguidorRepository, SeguidorRepository>();
             #endregion
 
             #region Validations
